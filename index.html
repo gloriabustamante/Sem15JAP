@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloria  Bustamante</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Gloria Bustamante</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Dolor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Amet</a>
+          </li>
+          <div class="dropdown d-md-none">
+            <button class="btn ps-0 pb-3 pt-1" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Opciones
+            </button>
+            <ul class="dropdown-menu text-start" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#parrafo1">Opción 1</a></li>
+                <li><a class="dropdown-item" href="#parrafo2">Opción 2</a></li>
+                <li><a class="dropdown-item" href="#parrafo3">Opción 3</a></li>
+                <li><a class="dropdown-item" href="#parrafo4">Opción 4</a></li>
+            </ul>
+            <li><hr class="dropdown-divider"></li>
+              <li>
+              <form class="d-flex">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success ms-2" type="submit">Search</button>
+              </form>
+            </li>
+        </div>
+        </ul>
+        <form class="d-none d-md-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="text-center mt-4 pb-3">
+    <h2>Divide y vencerás</h2>
+    <p class="carrusel" id="textoCarrusel"></p>
+  </div>
+
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="sidebar bg-light p-3 d-none d-md-block">
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#parrafo1">Opción 1</a></li>
+            <li class="list-group-item"><a href="#parrafo2">Opción 2</a></li>
+            <li class="list-group-item"><a href="#parrafo3">Opción 3</a></li>
+            <li class="list-group-item"><a href="#parrafo4">Opción 4</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-4">
+            <p id="parrafo1" class="border p-2">División (Dividir el problema)<br>
+            El primer paso es dividir el problema original en subproblemas. La idea es identificar partes más pequeñas y específicas del problema más grande, cada una de las cuales pueda resolverse de manera independiente. 
+            <br>
+            Ejemplo: Si el problema es ordenar una lista de números, el problema puede dividirse en subproblemas que ordenen partes más pequeñas de la lista. Esto no solo hace que el problema sea más manejable, sino que también permite utilizar diferentes enfoques para resolver cada subproblema.
+            <br>
+            Adicionalmente, al dividir el problema, se debe considerar si los subproblemas son lo suficientemente similares para aplicar la misma estrategia de solución, ya que esto optimiza el proceso.
+            </p>
+        </div>
+        
+        <div class="col-md-4">
+            <p id="parrafo2" class="border p-2">Conquista (Resolver los subproblemas)<br>
+            Una vez que los subproblemas están claramente definidos, se resuelven recursivamente (o iterativamente). La solución para cada subproblema es más simple que la del problema original. 
+            <br>
+            Es crucial abordar cada subproblema de forma independiente, asegurando que cada uno se resuelva correctamente. Este paso puede involucrar aplicar la misma técnica de división a los subproblemas hasta llegar a instancias que sean triviales de resolver, como un solo elemento en una lista.
+            <br>
+            Por ejemplo, en el caso del algoritmo de ordenación por mezcla, se continúa dividiendo la lista hasta que se obtienen listas de un solo elemento, que son inherentemente ordenadas.
+            </p>
+        </div>
+        
+        <div class="col-md-4">
+            <p id="parrafo3" class="border p-2">Combinación (Combinar las soluciones)<br>
+            Después de resolver los subproblemas, las soluciones individuales se combinan para formar la solución del problema original. 
+            <br>
+            Este paso es fundamental, ya que la combinación de las soluciones debe hacerse de manera que mantenga la integridad de la solución final. Es posible que se requiera lógica adicional para unir las soluciones, especialmente si hay dependencias entre los subproblemas.
+            <br>
+            En el caso de un algoritmo como el de ordenación por mezcla, esto implicaría fusionar las listas ordenadas resultantes en una lista única y ordenada, asegurando que todos los elementos estén en el orden correcto.
+            </p>
+        </div>
+        
+        <div class="col-md-4">
+            <p id="parrafo4" class="border p-2">Recurrencia<br>
+            Repetir el proceso recursivamente para cada subproblema hasta que los subproblemas sean lo suficientemente pequeños como para resolverse directamente. 
+            <br>
+            Este paso destaca la naturaleza recursiva de muchos algoritmos que aplican la estrategia de Divide y Vencerás. Es importante establecer condiciones de parada que eviten que la recursión se vuelva infinita. 
+            <br>
+            Por ejemplo, si se está implementando una función recursiva para calcular el factorial de un número, la condición de parada sería cuando el número es igual a 1. Esto garantiza que eventualmente se llegue a un caso base que se puede resolver sin más división.
+            </p>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</body>
+</html>
